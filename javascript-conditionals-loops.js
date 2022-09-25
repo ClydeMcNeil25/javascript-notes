@@ -93,7 +93,7 @@ while(cardPicked != 'diamond') {
 }
 console.log(cardPicked)
 
-//NESTED LOOPS, the best thing to take away is that the inner loop will run as long as the conditions are met on the outer loop
+//NESTED LOOPS, the best thing to take away is that the inner loop will run as long as the outer loop is running.
 
 //An example of a nested loop.
 for (let year = 2023; year < 2025; year++) {
@@ -104,7 +104,7 @@ for (let year = 2023; year < 2025; year++) {
 }
 //Another nested loop example
 for (let h = 100; h > 10; h = i - 10) {
-    for (var t = 10; t > 4; t = t - 5) {
+    for (var t = 10; t > 4; t = t - 10) {
         console.log(h + " divided by " + h + " equals " + h / t);
     }
 }
