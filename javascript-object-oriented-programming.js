@@ -173,12 +173,22 @@ train4.getPrototype(); // {constructor: f, toggleLights: f, ligthsStatus: f, get
 
 var train5 = new Train('blue', false);
 var highSpeed1 = new HighSpeedTrain(200, false, 'green', false);
+var highSpeed1 = new HighSpeedTrain(400, true, 'brown', false);
 
 train5.toggleLights(); // undefined
 train5.lightsStatus(); // Lights on? true
 highSpeed1.toggleLights(); // Lights on? true, Lights are 100% operational.
 train5.getPrototype(); // {constructor: ƒ, toggleLights: ƒ, lightsStatus: ƒ, getSelf: ƒ, getPrototype: ƒ}
 highSpeed1.getPrototype(); // Train {constructor: ƒ, toggleHighSpeed: ƒ, toggleLights: ƒ}
+
+console.log("RIGHT HERE", train5, highSpeed1);
+// Expected Output 
+// RIGHT HERE Train { color: 'blue', lightsOn: true } HighSpeedTrain {
+//     color: 'green',
+//     lightsOn: true,
+//     passengers: 200,
+//     highSpeedOn: false
+//   }
 
 
 // Bike Class
